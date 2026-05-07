@@ -1,0 +1,81 @@
+/* ── Features ────────────────────────────────────────────── */
+.features {
+  background: #F2F2F2;
+  padding: 80px 0px;
+}
+
+.line {
+  background: #000;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 1px;
+}
+
+.features__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 56px;
+  font-family: 'Ati goth', sans-serif;
+  font-size: 4rem;
+}
+.section-subtitle {
+  font-size: 1rem;
+  font-family: 'Ati goth', sans-serif;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+/* Grid — 3 columns */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.feature-card {
+  background: #F2F2F2;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.3s;
+  cursor: default;
+}
+.feature-card:hover {
+  border-color: rgba(249,87,56,0.25);
+}
+
+
+
+.feature-title {
+  font-size: 1.25rem;
+  font-family: 'Ati goth', sans-serif;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  text-align: center;
+
+}
+
+.feature-desc {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.7;
+  max-width: 290px;
+  text-align: center;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .features__grid { grid-template-columns: 1fr; }
+}

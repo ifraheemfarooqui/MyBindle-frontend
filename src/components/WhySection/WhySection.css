@@ -1,0 +1,164 @@
+/* ── Why Section ─────────────────────────────────────────── */
+.why {
+  background: var(--off-white);
+  padding: clamp(60px,8vw,100px) clamp(20px,5vw,60px);
+  overflow: hidden;
+}
+
+.why__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── Mockup ─────────────────────────────────────────────── */
+.why__mockup {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why__circle {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 280px;
+  height: 280px;
+  background: var(--coral);
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.18;
+}
+
+.why-phone {
+  position: absolute;
+  background: #1a1a2e;
+  border-radius: 30px;
+  padding: 12px 8px;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.why-phone--back {
+  width: 180px; height: 360px;
+  top: 60px; left: 20px;
+  transform: rotate(-6deg);
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.why-phone--front {
+  width: 210px; height: 400px;
+  top: 40px; left: 80px;
+  z-index: 2;
+}
+
+.why-phone__screen { height: 100%; display: flex; flex-direction: column; gap: 8px; }
+
+/* Reels thumbnails in back phone */
+.reel-thumb {
+  flex: 1;
+  border-radius: 10px;
+}
+.reel-thumb--a { background: linear-gradient(135deg,#3d3d58,#5a3d58); }
+.reel-thumb--b { background: linear-gradient(135deg,#2e4a3e,#3d5a4e); }
+.reel-thumb--c { background: linear-gradient(135deg,#4a3d2e,#5a4a2e); }
+
+/* Front phone UI */
+.why-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 2px;
+}
+.why-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--coral);
+  flex-shrink: 0;
+}
+.why-line {
+  height: 7px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+.why-line.short { width: 55%; }
+.why-big-img {
+  background: linear-gradient(135deg, #3d3d58, #5a4050);
+  border-radius: 12px;
+  height: 180px;
+  flex-shrink: 0;
+}
+.why-actions {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  padding: 4px 2px;
+}
+
+/* ── Content ────────────────────────────────────────────── */
+.why__content { padding: 20px 0; }
+
+.why__heading { margin-bottom: 18px; }
+
+.why__sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 420px;
+  margin-bottom: 36px;
+}
+
+.why__points {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.why__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.why__point:hover {
+  box-shadow: 0 6px 24px rgba(249,87,56,0.12);
+  transform: translateX(4px);
+}
+
+.why__point-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.why__point strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.why__point p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 820px) {
+  .why__inner { grid-template-columns: 1fr; }
+  .why__mockup { height: 340px; order: 2; }
+  .why__content { order: 1; }
+}
