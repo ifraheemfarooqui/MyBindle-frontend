@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Footer.css'
+import playStore from 'src\assets\google-play 1.png'
+import appStore from 'src\assets\apple-logo.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -63,7 +65,7 @@ export default function Footer() {
               onMouseEnter={e => gsap.to(e.currentTarget, { scale: 1.06, duration: 0.25 })}
               onMouseLeave={e => gsap.to(e.currentTarget, { scale: 1,    duration: 0.25 })}
             >
-<img className='store-icon' src="src\assets\apple-logo.png" alt="" />
+             <img className='store-icon' src={appStore} alt="" />
               <div>
                 <span className="store-label">Download on the</span><br />
                 <span className="store-name">App Store</span>
@@ -77,7 +79,7 @@ export default function Footer() {
               onMouseEnter={e => gsap.to(e.currentTarget, { scale: 1.06, duration: 0.25 })}
               onMouseLeave={e => gsap.to(e.currentTarget, { scale: 1,    duration: 0.25 })}
             >
-             <img src="src\assets\google-play 1.png" alt="" />
+             <img className='store-icon' src={playStore} alt="" />
               <div>
                 <span className="store-label">Get it on</span><br />
                 <span className="store-name">Google Play</span>

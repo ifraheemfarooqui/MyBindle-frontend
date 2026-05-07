@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './WhySection.css'
+import phoneBack from 'src\assets\phone 2 back.png'
+import phoneFront from 'src\assets\phone 2 front.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -61,10 +63,10 @@ export default function WhySection() {
         {/* Phone mockups */}
         <div className="why__mockup">
           <div className="why-phone why-phone--back">
-           <img src="src\assets\phone 2 back.png" alt="" />
+           <img src={phoneBack} alt="" />
           </div>
           <div className="why-phone why-phone--front">
-           <img src="src\assets\phone 2 front.png" alt="" />
+           <img src={phoneFront} alt="" />
           </div>
 
           {/* Red circle accent */}

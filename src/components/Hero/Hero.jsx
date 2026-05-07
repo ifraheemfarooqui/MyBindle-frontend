@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import './Hero.css'
+import phone from 'src\assets\Phone1.png'
+import logo from 'src\assets\logo.png'
 
 export default function Hero() {
   const sectionRef = useRef(null)
@@ -66,7 +68,7 @@ export default function Hero() {
   return (
     <section ref={sectionRef} className="hero" id="hero">
       <div className='hero_logo'>
-        <img src="src\assets\logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className="hero__inner">
 
@@ -97,19 +99,17 @@ export default function Hero() {
 
             {/* Main phone */}
             <div className="phone phone--main">
-            <img src="src\assets\Phone1.png" alt="phone" />
+            <img src={phone} alt="phone" />
             </div>
 
             {/* Floating badge 1 */}
             <div ref={badge1Ref} className="floating-badge badge--top">
-              <span className="badge-icon"><img src="src\assets\fire.png" alt="fire" /></span>
-              <span className="badge-text">Seamless Connections</span>
+              <span className="badge-text">🔥Seamless Connections</span>
             </div>
 
             {/* Floating badge 2 */}
             <div ref={badge2Ref} className="floating-badge badge--bottom">
-              <span className="badge-icon"><img src="src\assets\planet-earth.png" alt="earth" /></span>
-              <span className="badge-text">Discover &amp; Explore</span>
+              <span className="badge-text">🌎Discover &amp; Explore</span>
             </div>
           </div>
         </div>
