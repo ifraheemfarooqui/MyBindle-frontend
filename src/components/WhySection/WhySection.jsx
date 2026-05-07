@@ -64,7 +64,7 @@ export default function WhySection() {
            <img src="src\assets\phone 2 back.png" alt="" />
           </div>
           <div className="why-phone why-phone--front">
-           <img src="src\assets\phone2 front.png" alt="" />
+           <img src="src\assets\phone 2 front.png" alt="" />
           </div>
 
           {/* Red circle accent */}
@@ -74,7 +74,7 @@ export default function WhySection() {
         {/* Text */}
         <div className="why__content">
           <h2 className="why__heading section-title">
-            Where Every Click<br />Sparks a Connection!
+            Where Every Click Sparks a Connection!
           </h2>
           <p className="why__sub">
             A small act of kindness today can create a lifetime of impact for someone in
