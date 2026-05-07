@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './WhySection.css'
-import phoneBack from 'src\assets\phone 2 back.png'
-import phoneFront from 'src\assets\phone 2 front.png'
+import phoneBack from '../../assets/phone 2 back.png'
+import phoneFront from '../../assets/phone 2 front.png'
 
 gsap.registerPlugin(ScrollTrigger)
 

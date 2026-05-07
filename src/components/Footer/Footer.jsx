@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Footer.css'
-import playStore from 'src\assets\google-play 1.png'
-import appStore from 'src\assets\apple-logo.png'
+import playStore from '../../assets/google-play 1.png'
+import appStore from "../../assets/apple-logo.png"
 
 gsap.registerPlugin(ScrollTrigger)
 

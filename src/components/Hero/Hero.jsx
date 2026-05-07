@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import './Hero.css'
-import phone from 'src\assets\Phone1.png'
-import logo from 'src\assets\logo.png'
+import phone from '../../assets/Phone1.png'
+import logo from '../../assets/logo.png'
 
 export default function Hero() {
   const sectionRef = useRef(null)
