@@ -1,13 +1,16 @@
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
-  background: var(--coral);
+  background: #f2f2f2;
   overflow: hidden;
 }
 
 .footer__inner {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: clamp(60px,8vw,100px) clamp(20px,5vw,60px) 40px;
+  
+  background-color: #FF5349;
+  border-radius: 30px;
+  margin: auto;
+  padding: 60px 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
@@ -42,9 +45,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--white);
+  background: #ffffff;
   color: var(--text-dark);
-  padding: 11px 20px;
+  padding: 8px 15px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   transition: box-shadow 0.2s;
@@ -55,21 +58,18 @@
 }
 
 .store-icon {
-  width: 22px; height: 22px;
+  width: 30px; height: 30px;
   flex-shrink: 0;
   color: var(--text-dark);
 }
 
 .store-label {
-  display: block;
   font-size: 0.65rem;
-  color: var(--text-muted);
   line-height: 1.2;
 }
 .store-name {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--text-dark);
 }
 
